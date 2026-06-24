@@ -23,7 +23,7 @@ export default function AdminLogin() {
       await signIn(email, password)
       navigate('/admin')
     } catch (err) {
-      setError('Invalid email or password.')
+      setError('Wrong email or password.')
     } finally {
       setLoading(false)
     }
@@ -70,7 +70,7 @@ export default function AdminLogin() {
           {error && <p className={styles.error}>{error}</p>}
 
           <button type="submit" className={styles.btn} disabled={loading}>
-            {loading ? 'Unlocking…' : 'Enter'}
+            {loading ? 'Checking…' : 'Enter'}
           </button>
         </form>
       </div>
