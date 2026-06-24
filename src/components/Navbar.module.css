@@ -1,0 +1,104 @@
+.header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.brandName {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--brown-deep);
+  letter-spacing: 0.01em;
+}
+
+.brandTagline {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 1px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--brown);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  background: var(--sage-pale);
+  transition: background var(--transition);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: var(--sage-light);
+}
+
+.quietLink {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.quietLink:hover {
+  color: var(--brown);
+}
+
+.signOutBtn {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color var(--transition);
+}
+
+.signOutBtn:hover {
+  color: var(--rust);
+}
+
+@media (max-width: 600px) {
+  .brandTagline {
+    display: none;
+  }
+  .inner {
+    padding: 0 16px;
+  }
+}
