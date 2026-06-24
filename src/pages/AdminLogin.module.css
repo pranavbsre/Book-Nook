@@ -57,6 +57,17 @@
   font-style: italic;
 }
 
+
+
+.error {
+  font-size: 0.83rem;
+  color: var(--rust);
+  padding: 10px 14px;
+  background: #FBF0EC;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--rust);
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -90,15 +101,6 @@
 .input:focus {
   border-color: var(--brown-light);
   box-shadow: 0 0 0 3px rgba(160, 120, 80, 0.12);
-}
-
-.error {
-  font-size: 0.83rem;
-  color: var(--rust);
-  padding: 10px 14px;
-  background: #FBF0EC;
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--rust);
 }
 
 .btn {
