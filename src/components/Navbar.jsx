@@ -23,13 +23,11 @@ export default function Navbar() {
         </Link>
 
         <nav className={styles.nav}>
-          {user ? (
+          {user && user.email === import.meta.env.VITE_ADMIN_EMAIL && (
             <>
               <Link to="/admin" className={styles.navLink}>Admin Panel</Link>
               <button onClick={handleSignOut} className={styles.signOutBtn}>Sign out</button>
             </>
-          ) : (
-            <Link to="/admin/login" className={styles.quietLink}>Owner login</Link>
           )}
         </nav>
       </div>
